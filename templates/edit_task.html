@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Tarefa</title>
+</head>
+<body>
+    <h1>EDITAR TAREFA</h1>
+    <form method="POST">
+        <input type="text" name="task" value="{{ task }}" required>
+        <button type="submit">ATUALIZAR</button>
+    </form>
+    <br>
+    <button><a href="{{ url_for('index') }}">VOLTAR</a></button>
+</body>
+</html>

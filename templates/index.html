@@ -20,7 +20,8 @@
         {% for task in todo_list %}
             <li>
                 {{ task }}
-                <a href="{{ url_for('delete_task', task_id=loop.index0) }}">Excluir</a>
+                <button> <a href="{{ url_for('delete_task', task_id=loop.index0) }}">Excluir</a> </button>
+                <button> <a href="">Update</a> </button>
             </li>
         {% endfor %}
     </ul>
